@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>국내여행</title>
+  <!--구글폰트-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <!--부트스트랩-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!--css 연결 -->
+  <link rel="stylesheet" href="style.css">
+  <!-- jQuery 스크립트 추가 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Slick 플러그인 스크립트 추가 -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://kit.fontawesome.com/6b9a64c649.js" crossorigin="anonymous"></script>
+  <!--파비콘-->
+  <link rel="icon" href="./image/favicon.png" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary container">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./image/logo.png" alt="logo" width="150" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="overseas.html">해외여행</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="local_trip.html">국내여행</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tour_pass.html">투어/패스</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">항공</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">호텔</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="검색어를 입력해주세요" aria-label="Search" />
+            <button class="btn btn-outline-success btn-search" type="submit">검색</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+</header>
+
+  <main>
+    <!--캐러셀-->
+    <div class="carousel">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <a href="javascript:void(0)">
+              <div class="carousel-item-box">
+                <img src="image/local_trip/carousel_1.png" class="d-block w-100" alt="...">
+                <div class="carousel-text-box">
+                  <h3 class="carousel-subtitle">LIVE 방송상품</h3>
+                  <h2 class="carousel-title">제주여행 4일</h2>
+                  <p class="carousel-description">#럭셔리요트 #가파도청보리 #제주특식4회 #호텔조식3회</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="carousel-item">
+            <a href="javascript:void(0)">
+              <div class="carousel-item-box">
+                <img src="image/local_trip/carousel_2.png" class="d-block w-100" alt="...">
+                <div class="carousel-text-box text-white">
+                  <h3 class="carousel-subtitle">여행어때 단독 특가</h3>
+                  <h2 class="carousel-title">비양도 우도8경 투어</h2>
+                  <p class="carousel-description">#전일정식사포함 #노팁 #노옵션 #우도비양도</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="carousel-item">
+            <a href="javascript:void(0)">
+              <div class="carousel-item-box">
+                <img src="image/local_trip/carousel_3.png" class="d-block w-100" alt="...">
+                <div class="carousel-text-box text-white">
+                  <h3 class="carousel-subtitle">선착순 특가/독도포함</h3>
+                  <h2 class="carousel-title">울릉도 3일</h2>
+                  <p class="carousel-description">#호텔급 # 렌터카 #홍합밥 #오삼불고기</p>
+                </div>
+              </div>
+            </a>
+          </div>          
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- 특가 할인 -->
+      <div class="section2">
+        <div class="row">
+          <div class="col text-center section-title-box">
+            <h2>HOT! 국내 골프</h2>
+            <h6>지금이 가장 저렴해요!</h6>
+          </div>
+        </div>
+        <div class="row">
+
+          <!--card1-->
+          <div class="col-lg-4 col-sm-12 mb-5">
+            <div class="card h-100">
+              <div class="image-scale-box">
+                <img src="image/local_trip/section2_1.jpg" class="card-img-top" alt="...">
+              </div>
+              <a href="javascript:void(0)">
+                <div class="card-body">
+                  <div class="badge-group">
+                    <span class="badge text-bg-light section2-badge">골프</span>
+                    <span class="badge text-bg-light section2-badge">여수경도CC</span>
+                    <span class="badge text-bg-light section2-badge">취소 불가</span>
+                  </div>
+                  <div class="card-text-box">
+                    <h5>[여수경도CC 36홀] 전라도 골프 1박2일 (콘도+석식+조식)</h5>
+                    <h5><span>470,000</span>원~</h5>
+                  </div>
+                  <a href="javascript:void(0)" class="btn btn-outline-success btn-more">상품 상세보기</a>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!--card2-->
+          <div class="col-lg-4 col-sm-12 mb-5">
+            <div class="card h-100">
+              <div class="image-scale-box">
+                <img src="image/local_trip/section2_2.jpeg" class="card-img-top" alt="...">
+              </div>
+              <a href="javascript:void(0)">
+                <div class="card-body">
+                  <div class="badge-group">
+                    <span class="badge text-bg-light section2-badge">골프</span>
+                    <span class="badge text-bg-light section2-badge">설악썬밸리</span>
+                    <span class="badge text-bg-light section2-badge">취소 불가</span>
+                  </div>
+                  <div class="card-text-box">
+                    <h5>[설악 썬밸리 36홀] 강원도 골프 1박2일(콘도+조식)</h5>
+                    <h5><span>345,000</span>원~</h5>
+                  </div>
+                  <a href="javascript:void(0)" class="btn btn-outline-success btn-more">상품 상세보기</a>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!--card3-->
+          <div class="col-lg-4 col-sm-12 mb-5">
+            <div class="card h-100">
+              <div class="image-scale-box">
+                <img src="/image/local_trip/section2_3.jpeg" class="card-img-top" alt="...">
+              </div>
+              <a href="javascript:void(0)">
+                <div class="card-body">
+                  <div class="badge-group">
+                    <span class="badge text-bg-light section2-badge">골프</span>
+                    <span class="badge text-bg-light section2-badge">전라도</span>
+                    <span class="badge text-bg-light section2-badge">취소 불가</span>
+                  </div>
+                  <div class="card-text-box">
+                    <h5>[파인힐스C.C 36홀] 전라도 골프 1박2일 (골프텔)</h5>
+                    <h5><span>595,000</span>원~</h5>
+                  </div>
+                  <a href="javascript:void(0)" class="btn btn-outline-success btn-more">상품 상세보기</a>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 여행어때 추천 상품 -->
+      <div class="section3">
+        <div class="row">
+          <div class="col text-center section-title-box">
+            <h2>여행어때 추천 상품</h2>
+            <h6>여행어때가 엄선한 여행</h6>
+          </div>
+        </div>
+        
+        <div class="slide-box">
+
+          <!--card1-->
+          <div class="card-item">
+            <div class="image-box image-scale-box">
+              <img src="image/local_trip/section3_1.jpg">
+            </div>
+            <a href="javascript:void(0)">
+              <div class="card-body">
+                <div class="badge-group">
+                  <span class="badge text-bg-light section2-badge">말 먹이주기 체험</span>
+                  <span class="badge text-bg-light section2-badge">4성급 호텔</span>
+                  <span class="badge text-bg-light section2-badge">SNS핫플</span>
+                </div>
+                <div class="text-box">
+                  <h5>4인부터 단독행사 [시그니처] 느영나영 제주여행 2박3일</h5>
+                  <h5><span>755,900</span>원~</h5>
+                </div>
+                <a href="javascript:void(0)" class="btn btn-outline-success btn-more">상품 상세보기</a>
+              </div>
+            </a>
+          </div>
+
+          <!--card2-->
+          <div class="card-item">
+            <div class="image-box image-scale-box">
+              <img src="image/local_trip/section3_2.jpeg">
+            </div>
+            <a href="javascript:void(0)">
+              <div class="card-body">
+                <div class="badge-group">
+                  <span class="badge text-bg-light section2-badge">가이드</span>
+                  <span class="badge text-bg-light section2-badge">어린이 반값</span>
+                  <span class="badge text-bg-light section2-badge">프라이빗</span>
+                </div>
+                <div class="text-box">
+                  <h5>4인부터 우리만 단독행사/가이드 제주 2박3일_월령선인장마을/올레7코스</h5>
+                  <h5><span>880,100</span>원~</h5>
+                </div>
+                <a href="javascript:void(0)" class="btn btn-outline-success btn-more">상품 상세보기</a>
+              </div>
+            </a>
+          </div>
+
+          <!--card3-->
+          <div class="card-item">
+            <div class="image-box image-scale-box">
+              <img src="image/local_trip/section3_3.jpg">
+            </div>
+            <a href="javascript:void(0)">
+              <div class="card-body">
+                <div class="badge-group">
+                  <span class="badge text-bg-light section2-badge">조식포함</span>
+                  <span class="badge text-bg-light section2-badge">프라이빗</span>
+                  <span class="badge text-bg-light section2-badge">노옵션</span>
+                </div>
+                <div class="text-box">
+                  <h5>익사이팅! 제주[4명부터 단독행사] 제주 다인리조트 체험여행 3일-노팁/노옵션</h5>
+                  <h5><span>633,000</span>원~</h5>
+                </div>
+                <a href="javascript:void(0)" class="btn btn-outline-success btn-more">상품 상세보기</a>
+              </div>
+            </a>
+          </div>
+
+          <!--card4-->
+          <div class="card-item">
+            <div class="image-box image-scale-box">
+              <img src="image/local_trip/section3_4.png">
+            </div>
+            <a href="javascript:void(0)">
+              <div class="card-body">
+                <div class="badge-group">
+                  <span class="badge text-bg-light section2-badge">크루즈</span>
+                  <span class="badge text-bg-light section2-badge">조식포함</span>
+                </div>
+                <div class="text-box">
+                  <h5>[후포출발/썬플라워크루즈/모텔급] 아름다운 우리 영토 울릉도 2박3일</h5>
+                  <h5><span>365,000</span>원~</h5>
+                </div>
+                <a href="javascript:void(0)" class="btn btn-outline-success btn-more">상품 상세보기</a>
+              </div>
+            </a>
+          </div>
+
+          <!--card5-->
+          <div class="card-item">
+            <div class="image-box image-scale-box">
+              <img src="image/local_trip/section3_5.png">
+            </div>
+            <a href="javascript:void(0)">
+              <div class="card-body">
+                <div class="badge-group">
+                  <span class="badge text-bg-light section2-badge">식도락</span>
+                  <span class="badge text-bg-light section2-badge">럭셔리 요트투어</span>
+                </div>
+                <div class="text-box">
+                  <h5>제주의 재발견 6월 특가 제주미식회 식도락/럭셔리요트투어 2박3일</h5>
+                  <h5><span>399,000</span>원~</h5>
+                </div>
+                <a href="javascript:void(0)" class="btn btn-outline-success btn-more">상품 상세보기</a>
+              </div>
+            </a>
+          </div>
+          
+          <!--card6-->
+          <div class="card-item">
+            <div class="image-box image-scale-box">
+              <img src="image/local_trip/section3_6.png">
+            </div>
+            <a href="javascript:void(0)">
+              <div class="card-body">
+                <div class="badge-group">
+                  <span class="badge text-bg-light section2-badge">차량픽업</span>
+                  <span class="badge text-bg-light section2-badge">취소불가</span>
+                </div>
+                <div class="text-box">
+                  <h5>제주 볼튼호텔 2박3일 에어텔(항공/호텔/조식포함)</h5>
+                  <h5><span>459,000</span>원~</h5>
+                </div>
+                <a href="javascript:void(0)" class="btn btn-outline-success btn-more">상품 상세보기</a>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section4">
+        <div class="row">
+          <div class="col text-center section-title-box">
+            <h2>놓치면 후회할 국내여행</h2>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-4 col-sm-12">
+            <h4 class="section3-title">🌊 제주특가 BEST</h4>
+            <p class="section3-description">언제나 제주</p>
+          </div>
+          <!--card1-->
+          <div class="col-lg-4 col-sm-12 mb-5">
+            <div class="card h-100">
+              <div class="image-scale-box">
+                <img src="image/local_trip/section4_1.png" class="card-img-top" alt="...">
+              </div>
+              <a href="javascript:void(0)">
+                <div class="card-body">
+                  <div class="card-text-box">
+                    <h5>제주의 재발견 6월 특가 비양도/우도 4성급호텔 2박3일</h5>
+                    <h5><span>599,000</span>원~</h5>
+                  </div>
+                  <a href="javascript:void(0)" class="btn btn-outline-success btn-more">상품 상세보기</a>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!--card2-->
+          <div class="col-lg-4 col-sm-12 mb-5">
+            <div class="card h-100">
+              <div class="image-scale-box">
+                <img src="image/local_trip/section4_2.png" class="card-img-top" alt="...">
+              </div>
+              <a href="javascript:void(0)">
+                <div class="card-body">
+                  <div class="card-text-box">
+                    <h5>대한항공/김포출발/노팁노옵션 섬속의 섬 3도[우도,마라도] 투어 2박3일</h5>
+                    <h5><span>665,500</span>원~</h5>
+                  </div>
+                  <a href="javascript:void(0)" class="btn btn-outline-success btn-more">상품 상세보기</a>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-lg-4 col-sm-12">
+            <h4 class="section3-title">✨ 스페셜특전!</h4>
+            <p class="section3-description">족욕쿠폰증정</p>
+          </div>
+          <!--card1-->
+          <div class="col-lg-4 col-sm-12 mb-5">
+            <div class="card h-100">
+              <div class="image-scale-box">
+                <img src="image/local_trip/section4_3.png" class="card-img-top" alt="...">
+              </div>
+              <a href="javascript:void(0)">
+                <div class="card-body">
+                  <div class="card-text-box">
+                    <h5>그랜드하얏트 제주 2박3일 에어텔(항공/호텔/족욕쿠폰증정)</h5>
+                    <h5><span>459,000</span>원~</h5>
+                  </div>
+                  <a href="javascript:void(0)" class="btn btn-outline-success btn-more">상품 상세보기</a>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!--card2-->
+          <div class="col-lg-4 col-sm-12 mb-5">
+            <div class="card h-100">
+              <div class="image-scale-box">
+                <img src="image/local_trip/section4_4.png" class="card-img-top" alt="...">
+              </div>
+              <a href="javascript:void(0)">
+                <div class="card-body">
+                  <div class="card-text-box">
+                    <h5>시리우스호텔 2박3일 에어텔(항공/호텔/족욕쿠폰증정)</h5>
+                    <h5><span>279,900</span>원~</h5>
+                  </div>
+                  <a href="javascript:void(0)" class="btn btn-outline-success btn-more">상품 상세보기</a>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-lg-4 col-sm-12">
+            <h4 class="section3-title">🏝️ 섬, 쉼이 있는 곳</h4>
+            <p class="section3-description">전국 방방곡곡 섬나들이</p>
+          </div>
+          <!--card1-->
+          <div class="col-lg-4 col-sm-12 mb-5">
+            <div class="card h-100">
+              <div class="image-scale-box">
+                <img src="image/local_trip/section4_5.png" class="card-img-top" alt="...">
+              </div>
+              <a href="javascript:void(0)">
+                <div class="card-body">
+                  <div class="card-text-box">
+                    <h5>[포항영일만/울릉크루즈/호텔급] 울릉도 육로관광 A+B/관음도/천부해중전망대/카페울라/독도 4일</h5>
+                    <h5><span>499,000</span>원~</h5>
+                  </div>
+                  <a href="javascript:void(0)" class="btn btn-outline-success btn-more">상품 상세보기</a>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!--card2-->
+          <div class="col-lg-4 col-sm-12 mb-5">
+            <div class="card h-100">
+              <div class="image-scale-box">
+                <img src="image/local_trip/section4_6.png" class="card-img-top" alt="...">
+              </div>
+              <a href="javascript:void(0)">
+                <div class="card-body">
+                  <div class="card-text-box">
+                    <h5>[강릉항/모텔급] 천혜의 관광지 울릉도 4도탐방 (울릉도+관음도+죽도+독도) (2박3일)</h5>
+                    <h5><span>339,900</span>원~</h5>
+                  </div>
+                  <a href="javascript:void(0)" class="btn btn-outline-success btn-more">상품 상세보기</a>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>  
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row first-line pt-5 pb-3">
+        <div class="col-lg-6 col-md-12 col-sm-12 pb-4">
+          <div class="d-flex">
+            <div class="icon pe-4"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="icon pe-4"><i class="fa-brands fa-x-twitter b_icon"></i></div>
+            <div class="icon pe-4"><i class="fa-brands fa-instagram b_icon"></i></div>
+            <div class="icon pe-4"><i class="fa-brands fa-youtube b_icon"></i></div>
+            <div class="icon pe-4"><i class="fa-brands fa-spotify"></i></div>
+            <div class="icon pe-4"><i class="fa-brands fa-discord"></i></div>
+            <div class="icon"><i class="fa-brands fa-tiktok"></i></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-4">
+          <div class="title">COMPANY</div>
+          <div class="menu"><a href="#">Package Overseas</a></div>
+          <div class="menu"><a href="#">Package Domestic</a></div>
+          <div class="menu"><a href="#">Tour Pass Vehicle</a></div>
+          <div class="menu"><a href="#">Flights</a></div>
+          <div class="menu"><a href="#">Hotel</a></div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-4">
+          <div class="title">LEGAL TERMS AND CONDITIONS</div>
+          <div class="menu"><a href="#">Legal Notice</a></div>
+          <div class="menu"><a href="#">Privacy Policy</a></div>
+          <div class="menu"><a href="#">Cookie Policy</a></div>
+          <div class="menu"><a href="#">Sitemap</a></div>
+        </div>
+      </div>
+      <div class="row second-line">
+        <div class="col-lg-3 col-md-12 pt-4 pb-4 second-line-menu title">
+          <span><i class="fa-solid fa-location-dot"></i></span>
+          <span><a href="#">STORE LOCATOR</a></span>
+        </div>
+        <div class="col-lg-6 col-md-12 pt-4 pb-4 second-line-menu title">
+          <span><i class="fa-solid fa-globe"></i></span>
+          <span><a href="#">LOCATION: REST OF THE WORLD</a></span>
+        </div>
+        <div class="col-lg-3 col-md-12 pt-4 pb-4 second-line-menu">
+          COPYRIGHT 2024-2028 여행어때. ALL RIGHTS RESERVED.
+        </div>
+      </div>
+      <div class="third-line pt-4 pb-4">
+        <div class="row awards container d-flex">
+          <div class="awards-img col-lg-2 col-md-4 col-sm-6 col-6 pt-4 pb-4">
+            <img src="./image/main/awards_1.png" height="32px" alt="" />
+          </div>
+          <div class="awards-img col-lg-2 col-md-4 col-sm-6 col-6 pt-4 pb-4">
+            <img src="./image/main/awards_2.png" height="32px" alt="" />
+          </div>
+          <div class="awards-img col-lg-2 col-md-4 col-sm-6 col-6 pt-4 pb-4">
+            <img src="./image/main/awards_3.png" height="32px" alt="" />
+          </div>
+          <div class="awards-img col-lg-2 col-md-4 col-sm-6 col-6 pt-4 pb-4">
+            <img src="./image/main/awards_4.png" height="32px" alt="" />
+          </div>
+          <div class="awards-img col-lg-2 col-md-4 col-sm-6 col-6 pt-4 pb-4">
+            <img src="./image/main/awards_5.png" height="32px" alt="" />
+          </div>
+          <div class="awards-img col-lg-2 col-md-4 col-sm-6 col-6 pt-4 pb-4">
+            <img src="./image/main/awards_6.png" height="32px" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    $('.slide-box').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      prevArrow: '<button class="prev"><span class="material-symbols-outlined">arrow_back_ios</span></button>',
+      nextArrow: '<button class="next"><span class="material-symbols-outlined">arrow_forward_ios</span></button>',
+      responsive: [
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 770,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
+    });
+  </script>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
